@@ -1,0 +1,17 @@
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+python-escpos
+pydantic>=2.4.2
+python-multipart>=0.0.6
+jinja2>=3.1.2
+aiofiles>=23.2.1
+pyusb>=1.2.1
+qrcode>=7.4.2
+html2text>=2020.1.16
+requests>=2.25.0
+pywin32>=311; sys_platform == "win32"
+beautifulsoup4
+Pillow
+
+pyinstaller --noconfirm --onefile --console --add-data "C:\Users\jesus\AppData\Local\Programs\Python\Python313\Lib\site-packages\escpos;escpos" "C:\Users\jesus\Desktop\PrintPOS - copia\main.py"
+pyinstaller --noconfirm --onefile --windowed --add-data "C:\Users\jesus\AppData\Local\Programs\Python\Python313\Lib\site-packages\escpos;escpos"  "C:\Users\jesus\Desktop\PrintPOS - copia\main.py"
